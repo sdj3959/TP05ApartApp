@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_second_button"
+        android:text="서울(0건)"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        android:textAlignment="viewStart"
+        android:drawablePadding="16dp"
+        android:paddingLeft="16dp"
+        android:drawableLeft="@drawable/search2_image_customize"/>
+
+</RelativeLayout>

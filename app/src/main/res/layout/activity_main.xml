@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/home"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="이달의 청약"
+        android:textColor="#000947"
+        android:textSize="40sp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/youandpeopleks"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V1.0.2"
+        android:layout_gravity="center"
+        android:fontFamily="@font/youandpeopleks"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_main">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/bg_main_button"
+            android:text="이번달 청약\n조회하기"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FF838383"
+            android:drawableLeft="@drawable/search_image_customize"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

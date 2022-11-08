@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_baseline_home_24" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주택명 : 양양 스위트엠 디오션"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#00CCFF"
+                android:layout_toRightOf="@id/iv"/>
+
+            <TextView
+                android:id="@+id/tv_reg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toRightOf="@id/iv"
+                android:text="공급지역 : 강원"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_reg_name"
+                android:layout_toRightOf="@id/iv"
+                android:text="공급위치 : 강원도 양양군 양양읍 청곡리 87-7 번지 외 16필지"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_location"
+                android:text="청약 접수 시작일 : 2022-09-15"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_start_date"
+                android:text="청약 접수 종료일 : 2022-09-15"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_end_date"
+                android:text="건설업체명 : 신태양건설"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_company"
+                android:autoLink="phone"
+                android:text="문의처 : 15334209"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:id="@+id/tv_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tel"
+                android:text="사업주체명(시행사) : 대한토지신탁(주)"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_go_inside_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bank"
+                android:layout_margin="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="입주예정월 : 202505"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_go_inside_date"
+                android:autoLink="web"
+                android:text="홈페이지 : http://www.양양스위트엠.com"
+                android:textSize="16sp"
+                android:layout_margin="2dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:background="@drawable/bg_second_button"
+                android:text="지도로 위치보기"
+                android:textColor="#434343"
+                android:drawableLeft="@drawable/pin_image_customize"
+                android:drawableTint="#FF9800"
+                android:paddingLeft="100dp"
+                android:drawablePadding="-110dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
